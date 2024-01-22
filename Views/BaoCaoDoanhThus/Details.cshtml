@@ -1,0 +1,49 @@
+﻿@model QLBH.Models.BaoCaoDoanhThu
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>BaoCaoDoanhThu</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SoLuongMua)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SoLuongMua)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tongthu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tongthu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tongchi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tongchi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LoiNhuan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LoiNhuan)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Thue)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Thue)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SoLuongBan">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
